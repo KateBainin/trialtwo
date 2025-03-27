@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.home{
+    background: linear-gradient(to top, rgba(0,0,0,.5)50%, rgba(0,0,0,.5)100%), url(iMAGES/law11.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+header .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+    padding-top: 1%;
+    margin-left: 2%;
+}
+header .logo span{
+    color: #ec9f68;
+}
+header .menubtn{
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+header .menubtn img{
+    filter: invert(1);
+}
+header .navbar a{
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 15px;
+    position: relative;
+}
+header .navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background: #ec9f68;
+    transition: .2s linear;
+}
+header .navbar a:hover::before{
+    width: 100%;
+}
+.btn{
+    padding: 10px 15px;
+    background: #ec9f68;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn:hover{
+    border: 1px solid black;
+    background: #fff;
+    color: black;
+    transition: 1s;
+}
+.home .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.home .wrapper h1{
+margin-top: 3%;
+font-weight: 200;
+font-size: 130%;
+color: #fff;
+padding-left: 5.2%;
+}
+.home .wrapper p{
+    padding-right: 40%;
+    text-align: justify;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-weight: 200;
+    font-size: 130%;
+    color: #fff;
+}
+.home .wrapper h3{
+    margin-top: 1%;
+    font-weight: 600;
+    font-size: 120%;
+    color: #fff;
+    padding-left: 5.2%  
+}
+.buttons{
+    margin-top: 1.5rem;
+    padding-left: 5.2% 
+}
+.btn2{
+    padding: 8px 15px;
+    color: #ec9f68;
+    border: 2px solid #fff;
+}
+.btn2:hover{
+    background: #fff;
+    color: black;
+    transition: 1s;  
+}
+
+/*---About us----*/
+.welcome img{
+    width: 50%;
+    height: 80vh;
+    padding-left: 5%;
+}
+.welcome{
+    display: flex;
+    margin-top: 5%;
+    gap: 7rem;
+    margin-bottom: 7%;
+  }
+  .welcome h1{
+    margin-top: 6%;
+    text-align: left;
+    color: rgba(117, 49, 23, 0.774);
+    font-weight: 550;
+    font-size: 90%;
+    margin-bottom: 3%;
+  }
+  .welcome p{
+    font-weight: 400;
+    font-size: 100%;
+    padding-right: 30%;
+    text-align: justify;
+  }
+  .welcome h2{
+    font-size: 100%;
+    margin-bottom: 4%;
+  }
+.btn3{
+    padding: 8px 15px;
+    color: black;
+  border: 1.2px solid black;
+  background: #fff;
+  cursor: pointer;
+  padding: 2%;
+}
+.btn3:hover{
+    border: 1px solid #070101;
+  background: #070101;
+  transition: 1s;
+  color: #fff;  
+}
+
+/*-----Staff----*/
+
+.stafff h2{
+    font-family: 'prata', serif;
+    color: #0d0b5c;
+    font-weight: 600;
+    margin-bottom: 1%;
+    font-size: 250%; 
+    margin-left: 3%;
+    border-left: 8px solid #5c1e1a;
+    padding-left: 1%;
+  }
+  .staff-grid{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 5%;
+    gap: 3%;
+    align-items: center;
+  }
+  .staff-card img{
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+  }
+  .staff-card-content{
+    text-align: center;
+  }
+  .staff-card-content h5{
+    font-weight: 500;
+    color: #5c1e1a;
+    margin-top: 10%;
+    margin-bottom: 4%;
+  }
+  .staff-card-content h2{
+    font-family: 'prata', serif;
+    color: #05042c;
+    font-weight: 545;
+    margin-bottom: 2%;
+    font-size: 200%;
+  }
+  .staff-card-content P{
+    color: #646262;
+  
+  }
+  .staff-card::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5c1e1a;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+  transition: 0.5s;
+  }
+  .staff-card:hover::after{
+    width: 100%;
+    } 
+.experience{
+    background-color: #ecebeb;
+    height: 80vh;
+    margin-bottom: 80px;
+}
+.experience-context{
+    padding-top: 85px;
+    padding-left: 200px;
+}
+.experience-context h3{
+    color: rgb(202, 148, 30);
+    margin-bottom: 2%;
+    font-size: 120%;
+    font-weight: 400;
+}
+.experience-context h4{
+    font-size: 250%;
+font-family: "Quicksand", sans-serif;
+font-weight: 900;
+}
+.experience-context h2{
+    color: rgb(202, 148, 30);
+    font-family: "Quicksand", sans-serif;
+    font-size: 250%;
+    margin-bottom: 2%;
+}
+.experience-context p{
+font-weight: bold;
+line-height: 25px;
+margin-bottom: 2%;
+}
+.tick h5{
+    font-size: 100%;
+    line-height: 20px;
+}
+
+.experience-header2 img{
+    width: 35%;
+    height: 70vh;
+    margin-left: 800px;
+    margin-top: -490px;
+    border-radius: 20px;
+}
+
+/*---- Footer-----*/
+.contactinfo{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: #01002bef;
+}
+.contactinfo .box{
+    padding: 1.5rem;
+    border: 1px solid #aaa;
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #aaa;
+}
+.contactinfo .box span{
+    color: #0d0b5c;
+    padding: 10px 0;
+}
+.footer{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.footer a{
+    color: #202022;
+    font-size: 18px;
+}
+.copy{
+    background: #202047ef;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+.gotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 1.9rem;
+    width: 1.9rem;
+    line-height: 1.9rem;
+    border-radius: 3px;
+    background: #ec9f68;
+    text-align: center;
+    display: none;
+}
+.gotop img{
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: cover;
+    filter: invert(1);
+}
+.gotop.active{
+    display: block;
+}

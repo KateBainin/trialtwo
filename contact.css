@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.home{
+    background: linear-gradient(to top, rgba(16, 22, 43, 0.7),rgba(22, 26, 39, 0.7)),url(images/customer3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 45vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+header .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+    padding-top: 1%;
+    margin-left: 2%;
+}
+header .logo span{
+    color: #ec9f68;
+}
+header .menubtn{
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+header .menubtn img{
+    filter: invert(1);
+}
+header .navbar a{
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 15px;
+    position: relative;
+}
+header .navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background: #ec9f68;
+    transition: .2s linear;
+}
+header .navbar a:hover::before{
+    width: 100%;
+}
+.btn{
+    padding: 10px 15px;
+    background: #ec9f68;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn:hover{
+    border: 1px solid black;
+    background: #fff;
+    color: black;
+    transition: 1s;
+}
+.home .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.home .wrapper h1{
+    color: #fff;
+    font-size: 400%;
+    font-weight: 100;
+    font-family: 'prata', serif;
+    padding-top: 2%;
+}
+.home .wrapper h3{
+    font-weight: 300;
+  margin-top: 1%;
+}
+.buttons{
+    margin-top: 1.5rem;
+    padding-left: 45%;
+}
+.btn2{
+    padding: 8px 15px;
+    color: #ec9f68;
+    border: 2px solid #fff;
+}
+.btn2:hover{
+    background: #fff;
+    color: black;
+    transition: 1s;  
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+  }
+ .location iframe{
+  width: 100%;
+ }
+ .contact{
+ background: linear-gradient(to top, rgba(0,0,0,.5)50%, rgba(0,0,0,.5)100%), url(../images/bg-1.jpg) no-repeat;
+ background-position: center;
+ background-size: cover;
+ padding: 50px 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ margin-bottom: -1%;
+}
+.contact span{
+ color: #0d0b5c;
+ font-size: 12px;
+ font-weight: 500;
+}
+.contact h3{
+ color: #fff;
+ font-size: 2rem;
+ font-weight: 500;
+}
+.contact form{
+ display: flex;
+ flex-direction: column;
+ width: 450px;
+ margin-top: 10px;
+}
+.contact form .box{
+ padding: 10px 5px;
+ font-size: 15px;
+ background: #fff;
+ outline: none;
+ border: none;
+ margin: 3px 0;
+}
+.contact form textarea{
+ height: 8rem;
+ resize: none;
+ outline: none;
+ margin-bottom: 12px;
+ padding: 10px 5px;
+ font-size: 15px;
+}
+.contactinfo{
+ padding: 20px 50px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+ gap: 1rem;
+ margin-top: 1rem;
+ background-color: #01002bef;
+}
+.contactinfo .box{
+ padding: 1.5rem;
+ border: 1px solid #aaa;
+ display: flex;align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: #aaa;
+}
+.contactinfo .box span{
+ color: #0d0b5c;
+ padding: 10px 0;
+}
+/*---- Footer-----*/
+.contactinfo{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: #01002bef;
+}
+.contactinfo .box{
+    padding: 1.5rem;
+    border: 1px solid #aaa;
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #aaa;
+}
+.contactinfo .box span{
+    color: #0d0b5c;
+    padding: 10px 0;
+}
+.footer{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.footer a{
+    color: #202022;
+    font-size: 18px;
+}
+.copy{
+    background: #202047ef;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+.gotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 1.9rem;
+    width: 1.9rem;
+    line-height: 1.9rem;
+    border-radius: 3px;
+    background: #ec9f68;
+    text-align: center;
+    display: none;
+}
+.gotop img{
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: cover;
+    filter: invert(1);
+}
+.gotop.active{
+    display: block;
+}
